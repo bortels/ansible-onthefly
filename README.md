@@ -23,12 +23,12 @@ ln -s ansible ansible-vault
 
 5) test:
 
-# First, hit the old, system ansible:
-[tbortels@bsprd10utlge001 ~]$ /usr/bin/ansible --version
-ansible 1.6.2
-# Now try ansible in docker
-[tbortels@bsprd10utlge001 ~]$ ansible --version
-ansible 1.7.2
+    # First, hit the old, system ansible:
+    [tbortels@ansible ~]$ /usr/bin/ansible --version
+    ansible 1.6.2
+    # Now try ansible in docker
+    [tbortels@ansible ~]$ ansible --version
+    ansible 1.7.2
 
 Notes:
 
