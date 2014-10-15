@@ -21,6 +21,10 @@ ln -s ansible ansible-vault
 
 4) ensure that ~/bin is the first directory on your PATH.
 
+5) Copy the ansible.cfg to /etc/ansible/onthefly-ansible.cfg
+   (or use your own, or copy to a different place and modify
+   the "ansible" script above accordingly)
+
 5) test:
 
     # First, hit the old, system ansible:
