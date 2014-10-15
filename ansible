@@ -5,6 +5,6 @@ USER=`whoami`
 docker run -e "USER=$USER" -h ansible.dcb.diginsite.net --rm -it \
    -v /etc/ansible/hosts:/etc/ansible/hosts:ro \
    -v /etc/ansible/host_vars:/etc/ansible/host_vars:ro \
-   -v /home/tbortels/docker/onthefly/ansible.cfg:/etc/ansible/ansible.cfg:ro \
+   -v /etc/ansible/onthefly-ansible.cfg:/etc/ansible/ansible.cfg:ro \
    -v $(pwd):/data \
  ansible-onthefly $CMD -u $USER $@
